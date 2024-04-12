@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'gilroy';
+    font-weight: 400;
+    src: url(./assets/fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: 'gilroy';
+    font-weight: 600;
+    src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+    font-family: "gilroy";
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+::selection{
+    color: rgb(255,158,0);
+    color: -moz-linear-gradient(90deg, rgba(255,158,0,1) 6%, rgba(255,94,0,1) 59%);
+    color: -webkit-linear-gradient(90deg, rgba(255,158,0,1) 6%, rgba(255,94,0,1) 59%);
+    color: linear-gradient(90deg, rgba(255,158,0,1) 6%, rgba(255,94,0,1) 59%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9e00",endColorstr="#ff5e00",GradientType=1);
+}
