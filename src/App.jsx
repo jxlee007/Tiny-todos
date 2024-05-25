@@ -1,6 +1,8 @@
 // import React from 'react'
 import Background from './components/Background'
 import Foreground from './components/Foreground'
+import Form from './components/Form'
+import Layer from './components/Layer'
 
 function App() {
   return (
