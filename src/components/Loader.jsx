@@ -10,7 +10,7 @@ export const Loader = () => {
     const sequence = async () => {
       await controls.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
       await controls2.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      await controls3.start({ opacity: 0, y: -100, transition: { delay: 0.5, duration: 1 }, zIndex: 10});
+      await controls3.start({ opacity: 0, y: -100, transition: { delay: 0.8, duration: 1 }, zIndex: 10});
     }
     sequence();
   }, [controls, controls2, controls3]);
@@ -22,14 +22,14 @@ export const Loader = () => {
         initial={{ opacity: 1, y: 0 }}
     >
         <motion.span 
-            className=' text-orange-500 text-7xl font-medium '
+            className=' text-orange-500 text-5xl sm:text-7xl font-medium '
             animate={controls}
             initial={{ opacity: 0, y: -50 }}
         >
             Tiny tasks are
         </motion.span>
         <motion.span 
-            className=' text-orange-500 text-7xl font-medium '
+            className=' text-orange-500 text-5xl sm:text-7xl font-medium '
             animate={controls2}
             initial={{ opacity: 0, y: -50 }}
         >
