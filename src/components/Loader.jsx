@@ -22,18 +22,18 @@ export const Loader = () => {
         initial={{ opacity: 1, y: 0 }}
     >
         <motion.span 
-            className=' text-orange-500 text-6xl font-medium '
+            className=' text-orange-500 text-7xl font-medium '
             animate={controls}
             initial={{ opacity: 0, y: -50 }}
         >
             Tiny tasks are
         </motion.span>
         <motion.span 
-            className=' text-orange-500 text-6xl font-medium '
+            className=' text-orange-500 text-7xl font-medium '
             animate={controls2}
             initial={{ opacity: 0, y: -50 }}
         >
-            Effective to do
+            effective to do
         </motion.span>
     </motion.div>
   )
