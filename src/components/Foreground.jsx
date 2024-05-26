@@ -1,5 +1,5 @@
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { AiOutlinePlus } from 'react-icons/ai';
 import Card from "./Card";
@@ -11,7 +11,21 @@ function Foreground() {
     const controls = useAnimation();
 
     const [isFormOpen, setIsFormOpen] = useState(false);
-    const [todos, setTodos] = useState([]);
+
+    const [todos, setTodos] = useState(() => {
+        // Get the existing tasks from localStorage when the component mounts
+        const savedTodos = localStorage.getItem('todos');
+        if (savedTodos) {
+            return JSON.parse(savedTodos);
+        } else {
+            return [];
+        }
+    });
+
+    useEffect(() => {
+        // Save the tasks to localStorage whenever they change
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos]);
 
     
     const toggleForm = async() => {
