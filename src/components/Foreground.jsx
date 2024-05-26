@@ -62,7 +62,7 @@ function Foreground() {
                     damping: 20
                 }}
                 onClick={toggleForm}
-                className=" z-20 absolute top-2 left-1 sm:left-4 bg-orange-400 rounded-full p-4 text-zinc-700 text-2xl"
+                className=" z-20 absolute top-[85%] sm:top-2 left-4 bg-orange-400 rounded-full p-4 text-zinc-700 text-2xl"
             >
                 <AiOutlinePlus />
             </motion.div>
