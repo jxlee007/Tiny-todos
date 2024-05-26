@@ -41,7 +41,7 @@ Tiny - Todos is a simple yet effective task management application developed usi
 The project is inspired by the [Minidocs](https://youtu.be/syHGmY75pfs?si=FfgisCSR_tK54Fwk) content of Sheriyan Coding School React series.
 
 ## Shoutout To
-To the [Sheriyan Coding School](http://www.youtube.com/@thesheryianscodingschool) for providing such amazing content
+The [Sheriyan Coding School](http://www.youtube.com/@thesheryianscodingschool) for providing such amazing content
 And the React and Vite communities for their invaluable resources and contributions.
 
 ## Author
